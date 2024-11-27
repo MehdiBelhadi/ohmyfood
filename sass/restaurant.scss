@@ -1,0 +1,273 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    margin: 0px;
+    padding: 0px;
+    font-family: Shrikhand;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.top-bar a {
+    position: absolute;
+    left: 17px;
+    color: #353535;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.image {
+    width: 100%;
+    height: 275px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+}
+
+.btn {
+    margin-top: 40px;
+}
+
+.menu {
+    margin-top: 40px;
+}
+
+.menu-container {
+    background-color: #f6f6f6;
+    min-height: 300px;
+    border-radius: 25px 25px 0px 0px;
+    padding: 32px 13px 40px 13px;
+    margin-top: -25px;
+    position: relative;
+    overflow: hidden;
+
+    h2 {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        color: black;
+        font-weight: 300;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+}
+
+.menu-container_title {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.title-bar {
+    display: block;
+    background-color: #99E2D0;
+    margin-top: 4px;
+    width: 40px;
+    height: 3px;
+}
+
+.card {
+    height: 69px;
+    margin-top: 12px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex: 1;
+    opacity: 0;
+    overflow: hidden;
+    align-items: center;
+    box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+    animation-fill-mode: forwards;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover>.card_valid {
+        width: 59px;
+    }
+}
+
+.card_text {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex: 1;
+    padding-left: 15px;
+
+    p,
+    h3 {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    h3 {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        color: black;
+        font-weight: 500;
+        padding-bottom: 5px;
+    }
+
+    p {
+        font-family: "Roboto", sans-serif;
+        font-size: 15px;
+        color: black;
+        font-weight: 300;
+    }
+}
+
+.card_price {
+    padding-right: 15px;
+    padding-top: 25px;
+    padding-left: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: black;
+    font-weight: 700;
+}
+
+.card_valid {
+    position: relative;
+    height: 69px;
+    width: 0px;
+    line-height: 69px;
+    color: white;
+    font-size: 22px;
+    border-radius: 0px 15px 15px 0px;
+    transition: width 400ms;
+    background-color: #99E2D0;
+
+    i {
+        margin-left: 18.5px;
+    }
+}
+
+.anim--1 {
+    animation-delay: 200ms;
+    animation-name: card-anim;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+.anim--2 {
+    animation-delay: 400ms;
+    animation-name: card-anim;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+.anim--3 {
+    animation-delay: 600ms;
+    animation-name: card-anim;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+.anim--4 {
+    animation-delay: 800ms;
+    animation-name: card-anim;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+.anim--5 {
+    animation-delay: 1000ms;
+    animation-name: card-anim;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+.anim--6 {
+    animation-delay: 1200ms;
+    animation-name: card-anim;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+.anim--7 {
+    animation-delay: 1400ms;
+    animation-name: card-anim;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+.anim--8 {
+    animation-delay: 1600ms;
+    animation-name: card-anim;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+.anim--9 {
+    animation-delay: 1800ms;
+    animation-name: card-anim;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+.anim--10 {
+    animation-delay: 2000ms;
+    animation-name: card-anim;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+.anim--4 {
+    animation-delay: 800ms;
+    animation-name: card-anim;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+.anim--h2-1 {
+    animation-delay: 200ms;
+    animation-name: card-anim;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+.anim--h2-2 {
+    animation-delay: 800ms;
+    animation-name: h2-anim;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+.anim--h2-3 {
+    animation-delay: 1400ms;
+    animation-name: h2-anim;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+/* Version Bureau */
+@media (min-width: 1024px) {
+    .image {
+        height: 383px;
+    }
+
+    .menu-container {
+        max-width: 635px;
+        margin: auto;
+        margin-top: -28px;
+        padding-top: 51px;
+        padding-left: 210px;
+        padding-right: 210px;
+    }
+
+    .menu-container_title {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
+
+/* Generique */
+body {
+    background-color: #eaeaea;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0px;
+    padding: 39px 50px 0px 50px;
+}
+
+h2 {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 26px 20px;
+}
+
+h3 {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0px;
+    padding-bottom: 5px;
+}
+
+p {
+    margin: 0px;
+}
+
+/* Main */
+.location {
+    width: 100%;
+    height: 50px;
+    background-color: #eaeaea;
+    display: flex;
+    gap: 17px;
+    justify-content: center;
+    align-items: center;
+
+    i {
+        color: #353535;
+    }
+}
+
+.location_input {
+    padding: 0px;
+    width: 110px;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #353535;
+    font-weight: 500;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        color: #353535;
+    }
+
+    &:-moz-placeholder {
+        color: #353535;
+    }
+}
+
+.reservation {
+    background-color: #f6f6f6;
+    text-align: center;
+    padding-bottom: 57px;
+
+    p {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        color: #353535;
+        font-weight: 300;
+        padding: 0px 30px 29px 30px;
+        margin: 0px;
+    }
+}
+
+.fonctionnement {
+    background-color: white;
+    padding: 48px 0px 60px 0px;
+
+    .container-fonc {
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .choice {
+        position: relative;
+        padding-left: 12px;
+        width: 95%;
+    }
+
+    .choice_number {
+        display: inline-block;
+        margin: 0px;
+        position: absolute;
+        left: 0px;
+        top: 24px;
+        background-color: #9356DC;
+        height: 24px;
+        width: 24px;
+        line-height: 26px;
+        text-align: center;
+        border-radius: 24px;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        color: #f6f6f6;
+        font-weight: 500;
+    }
+
+    .choice_bloc {
+        height: 72px;
+        background-color: #f6f6f6;
+        border-radius: 20px;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        padding-left: 33px;
+        display: flex;
+        align-items: center;
+        gap: 27px;
+
+        p {
+            margin: 0px;
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+            color: black;
+            font-weight: 500;
+        }
+    }
+
+    .choice_bloc--purple {
+        color: #9356DC;
+    }
+
+    .choice_bloc--grey {
+        color: #7e7e7e;
+    }
+
+}
+
+.restaurant {
+    padding: 54px 0px 66px 0px;
+    width: 100%;
+
+    .rest-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+
+        .hide {
+            display: none;
+        }
+    }
+
+    .rest-container_link {
+        display: block;
+        width: 90%;
+        height: 251px;
+        background-color: white;
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+        text-decoration: none;
+    }
+
+    .rest-container_tag {
+        background-color: #99E2d0;
+        border-radius: 3px;
+        color: #008766;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 7px 9px 7px 9px;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    .rest-container_img {
+        height: 174px;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
+    .rest-container_text {
+        align-items: center;
+        color: black;
+        display: flex;
+        font-family: "Roboto", sans-serif;
+        font-size: 17px;
+        font-weight: 300;
+        height: 72px;
+        justify-content: space-between;
+        padding: 0px 25px 0px 13px;
+    }
+}
+
+/* Loader */
+.loader {
+    position: absolute;
+    background-color: #353535;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 100;
+    opacity: 0;
+    animation-name: anim-loader;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  .loader__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .loader__title {
+    font-family: Shrikhand;
+    font-size: 70px;
+    font-weight: 400;
+    color: white;
+  }
+.loadicon {
+    color: #ff79da;
+    animation: rotation 2s infinite linear;
+  }
+
+/* Version Bureau */
+@media (min-width: 1024px) {
+    h1 {
+        padding: 30px 0px 18px 0px;
+        font-size: 40px;
+    }
+
+    h2 {
+        font-family: "Roboto", sans-serif;
+        font-size: 24px;
+        color: black;
+        font-weight: 700;
+        padding: 0px 0px 28px 0px;
+    }
+
+    .reservation {
+        padding-bottom: 30px;
+
+        p {
+            padding: 0px 0px 18px 0px;
+            line-height: 46px;
+        }
+    }
+
+    .content {
+        max-width: 1080px;
+        margin: auto;
+    }
+
+    .fonctionnement {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        .container-fonc {
+            flex-direction: row;
+        }
+    }
+
+    .choice_bloc {
+        width: 90%;
+    }
+
+    .restaurant {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: auto;
+
+        .rest-container {
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 50px;
+            -moz-column-gap: 100px;
+            column-gap: 100px;
+        }
+
+        .rest-container_link {
+            width: 45%;
+        }
+    }
+}
