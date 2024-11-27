@@ -146,6 +146,7 @@ p {
 .restaurant {
   padding: 54px 0px 66px 0px;
   width: 100%;
+  background-color: #f6f6f6;
 }
 .restaurant .rest-container {
   display: flex;
@@ -225,7 +226,7 @@ p {
 
 .loader__title {
   font-family: Shrikhand;
-  font-size: 70px;
+  font-size: 40px;
   font-weight: 400;
   color: white;
 }
@@ -285,6 +286,12 @@ p {
   }
   .restaurant .rest-container_link {
     width: 45%;
+  }
+  .loader__title {
+    font-family: Shrikhand;
+    font-size: 70px;
+    font-weight: 400;
+    color: white;
   }
 }
 /* Footer */
@@ -547,14 +554,6 @@ body {
   background-color: white;
 }
 
-h1 {
-  margin: 0px;
-  padding: 0px;
-  font-family: Shrikhand;
-  font-size: 28px;
-  font-weight: 400;
-}
-
 .top-bar a {
   position: absolute;
   left: 17px;
@@ -574,10 +573,6 @@ h1 {
   object-fit: cover;
 }
 
-.btn {
-  margin-top: 40px;
-}
-
 .menu {
   margin-top: 40px;
 }
@@ -591,6 +586,13 @@ h1 {
   position: relative;
   overflow: hidden;
 }
+.menu-container h1 {
+  margin: 0px;
+  padding: 0px;
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-weight: 400;
+}
 .menu-container h2 {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -601,6 +603,9 @@ h1 {
   overflow: hidden;
   animation-fill-mode: forwards;
   opacity: 0;
+}
+.menu-container .btn {
+  margin-top: 40px;
 }
 
 .menu-container_title {
