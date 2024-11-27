@@ -160,6 +160,7 @@ p {
 .restaurant {
     padding: 54px 0px 66px 0px;
     width: 100%;
+    background-color: #f6f6f6;
 
     .rest-container {
         display: flex;
@@ -243,7 +244,7 @@ p {
   }
   .loader__title {
     font-family: Shrikhand;
-    font-size: 70px;
+    font-size: 40px;
     font-weight: 400;
     color: white;
   }
@@ -313,4 +314,11 @@ p {
             width: 45%;
         }
     }
+
+    .loader__title {
+        font-family: Shrikhand;
+        font-size: 70px;
+        font-weight: 400;
+        color: white;
+      }
 }
