@@ -482,14 +482,6 @@ footer .footer_container .icon-text a {
     height: 0px;
   }
 }
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 /* Animation des coeurs */
 @keyframes anim-heart {
   0% {
@@ -500,18 +492,6 @@ footer .footer_container .icon-text a {
   }
 }
 /* Animation des cartes du menu */
-@keyframes card-hide {
-  0% {
-    transform: translateX(0px);
-    opacity: 0;
-  }
-  1% {
-    transform: translateX(3000px);
-  }
-  100% {
-    transform: translateX(3000px);
-  }
-}
 @keyframes card-anim {
   0% {
     transform: translateX(3000px);
