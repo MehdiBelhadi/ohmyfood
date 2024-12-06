@@ -1,114 +1,96 @@
 /* Animation de rotation du cercle du loader */
 @keyframes rotation {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  /* Animation d'apparition du loader */
-  @keyframes anim-loader {
-    0% {
-      opacity: 1;
-    }
-    10% {
-      opacity: 1;
-    }
-    80% {
-      opacity: 1;
-    }
-    99% {
-      width: 100vw;
-      height: 100vh;
-    }
-    100% {
-      opacity: 0;
-      width: 0px;
-      height: 0px;
-    }
+  0% {
+    transform: rotate(0deg);
   }
 
-  @keyframes rotation{
-    from{
-      transform:rotate(0deg);
-    }
-    
-    to{
-      transform:rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
   }
+}
+
+/* Animation d'apparition du loader */
+@keyframes anim-loader {
+  0% {
+    opacity: 1;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  99% {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  100% {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+  }
+}
+
 /* Animation des coeurs */
 @keyframes anim-heart {
-    0% {
-        transform: scale(0);
-    }
+  0% {
+    transform: scale(0);
+  }
 
-    100% {
-        transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* Animation des cartes du menu */
-@keyframes card-hide {
-    0% {
-        transform: translateX(0px);
-        opacity: 0;
-    }
-
-    1% {
-        transform: translateX(3000px);
-    }
-
-    100% {
-        transform: translateX(3000px);
-    }
-}
-
 @keyframes card-anim {
-    0% {
-        transform: translateX(3000px);
-        opacity: 0;
-    }
+  0% {
+    transform: translateX(3000px);
+    opacity: 0;
+  }
 
-    50% {
-        opacity: 0;
-    }
+  50% {
+    opacity: 0;
+  }
 
-    95% {
-        opacity: 0.5;
-    }
+  95% {
+    opacity: 0.5;
+  }
 
-    99% {
-        transform: translateX(-5px);
-    }
+  99% {
+    transform: translateX(-5px);
+  }
 
-    100% {
-        transform: translateX(0px);
-        opacity: 1;
-    }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
 
 @keyframes h2-anim {
-    0% {
-        transform: translateX(3000px);
-        opacity: 0;
-    }
+  0% {
+    transform: translateX(3000px);
+    opacity: 0;
+  }
 
-    50% {
-        opacity: 0;
-    }
+  50% {
+    opacity: 0;
+  }
 
-    95% {
-        opacity: 0.5;
-    }
+  95% {
+    opacity: 0.5;
+  }
 
-    99% {
-        transform: translateX(-5px);
-    }
+  99% {
+    transform: translateX(-5px);
+  }
 
-    100% {
-        transform: translateX(0px);
-        opacity: 1;
-    }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
